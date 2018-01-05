@@ -1,0 +1,5 @@
+agent.application_code=custom
+agent.sample_n_per_3_secs=100
+collector.servers=pard.collector1.host:12720,pard.collector2.host:12720,pard.collector3.host:12720
+logging.level=info
+invoke-method={"content": [{"className": "test.ClassMatchTest1", "methodName": "test11", "mustIntercept": false, "entry": true}, {"className": "test.ClassMatchTest1", "methodName": "test12", "mustIntercept": false, "entry": true}, {"className": "test.ClassMatchTest2", "methodName": "test21", "mustIntercept": false, "entry": true}]}

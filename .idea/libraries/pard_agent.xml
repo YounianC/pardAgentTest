@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="pard-agent">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../lg-pardagent-java/pard-agent-boot/target/pard-agent.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../lg-pardagent-java/pard-agent-boot/target/pard-agent.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../lg-pardagent-java/pard-agent-boot/target/pard-agent.jar!/com/lagou/pard/dependencies" />
+    </SOURCES>
+  </library>
+</component>

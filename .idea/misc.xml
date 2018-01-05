@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/tomcat" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/tomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/custom/pom.xml" />
+        <option value="$PROJECT_DIR$/disruptorTest/pom.xml" />
+        <option value="$PROJECT_DIR$/dubboConsumer/pom.xml" />
+        <option value="$PROJECT_DIR$/jedis/pom.xml" />
+        <option value="$PROJECT_DIR$/mysql/pom.xml" />
+        <option value="$PROJECT_DIR$/other/pom.xml" />
+        <option value="$PROJECT_DIR$/dubboProvider/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

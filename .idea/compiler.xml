@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="custom" />
+        <module name="dubboConsumer" />
+        <module name="dubboProvider" />
+        <module name="jedis" />
+        <module name="mysql" />
+        <module name="other" />
+        <module name="test" />
+        <module name="tomcat" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="custom" target="1.7" />
+      <module name="dubboConsumer" target="1.7" />
+      <module name="dubboProvider" target="1.7" />
+      <module name="jedis" target="1.7" />
+      <module name="mysql" target="1.7" />
+      <module name="other" target="1.7" />
+      <module name="test" target="1.7" />
+      <module name="tomcat" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

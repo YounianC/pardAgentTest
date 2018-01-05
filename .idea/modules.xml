@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/custom/custom.iml" filepath="$PROJECT_DIR$/custom/custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboConsumer/dubboConsumer.iml" filepath="$PROJECT_DIR$/dubboConsumer/dubboConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dubboProvider/dubboProvider.iml" filepath="$PROJECT_DIR$/dubboProvider/dubboProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jedis/jedis.iml" filepath="$PROJECT_DIR$/jedis/jedis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql/mysql.iml" filepath="$PROJECT_DIR$/mysql/mysql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/other/other.iml" filepath="$PROJECT_DIR$/other/other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pardAgentTest.iml" filepath="$PROJECT_DIR$/.idea/pardAgentTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/disruptorTest/test.iml" filepath="$PROJECT_DIR$/disruptorTest/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tomcat/tomcat.iml" filepath="$PROJECT_DIR$/tomcat/tomcat.iml" />
+    </modules>
+  </component>
+</project>
