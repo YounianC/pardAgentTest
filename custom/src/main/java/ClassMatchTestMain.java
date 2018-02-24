@@ -16,7 +16,7 @@ public class ClassMatchTestMain {
             e.printStackTrace();
         }
         while (true) {
-            //classMatchTest1.test11();
+            classMatchTest1.test11();
             //classMatchTest1.test12();
             classMatchTest2.test21(method);
 

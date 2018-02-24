@@ -1,22 +1,15 @@
-import com.lagou.pard.agent.boot.BootServiceManager;
-import com.lagou.pard.agent.context.ContextManager;
-import com.lagou.pard.agent.remote.GRPCChannelManager;
 import com.lagou.pard.agent.remote.GRPCStreamServiceStatus;
 import com.lagou.pard.common.trace.Span;
 import com.lagou.pard.common.trace.SpanKind;
 import com.lagou.pard.common.trace.SpanLayer;
 import com.lagou.pard.common.trace.TraceSegment;
-import com.lagou.pard.common.trace.tag.Tags;
+import com.lagou.pard.dependencies.io.grpc.ManagedChannel;
+import com.lagou.pard.dependencies.io.grpc.netty.NettyChannelBuilder;
+import com.lagou.pard.dependencies.io.grpc.stub.StreamObserver;
 import com.lagou.pard.remote.grpc.proto.Downstream;
 import com.lagou.pard.remote.grpc.proto.TraceSegmentObject;
 import com.lagou.pard.remote.grpc.proto.TraceSegmentServiceGrpc;
-import io.grpc.ManagedChannel;
-import io.grpc.ManagedChannelBuilder;
-import io.grpc.internal.DnsNameResolverProvider;
-import io.grpc.netty.NettyChannelBuilder;
-import io.grpc.stub.StreamObserver;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.Date;
 import java.util.Random;
 
@@ -42,6 +35,7 @@ public class TestSendSegment {
                     @Override
                     public void onError(Throwable t) {
                         steamStatus.finish();
+                        System.out.println("onError..." + t.getMessage());
                     }
 
                     @Override
@@ -55,6 +49,7 @@ public class TestSendSegment {
                         streamObserver.onNext(generateSegment().serialize());
                         Thread.sleep(1);
                     } catch (Throwable t) {
+                        System.out.println("======== " + t.getMessage());
                     }
                 }
             }
@@ -62,9 +57,9 @@ public class TestSendSegment {
 
         new Thread(runnable).start();
         new Thread(runnable).start();
-        new Thread(runnable).start();
-        new Thread(runnable).start();
-        new Thread(runnable).start();
+        //new Thread(runnable).start();
+        //new Thread(runnable).start();
+        //new Thread(runnable).start();
     }
 
     private static TraceSegment generateSegment() {
@@ -82,9 +77,8 @@ public class TestSendSegment {
         parentSpan.setTag("url", "http://localhost:8080/redis" + new Random().nextInt());
         segment.archive(parentSpan);
 
-        Span span = null;
         for (int i = 1; i <= 20; i++) {
-            span = new Span(i, parentSpan, new Date().getTime() + i, "test_" + i);
+            Span span =  new Span(i, parentSpan, new Date().getTime() + i, "test_" + i);
             span.setComponent("Redis");
             span.setError(false);
             span.setEndTime(span.getStartTime() + 20);

@@ -1,7 +1,5 @@
 package Controller;
 
-import Service.TestService;
-import Service.TestService2;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -27,7 +25,7 @@ import java.util.Set;
 public class IndexController {
 
 
-    @RequestMapping(value = "/redis", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String redis(HttpServletRequest request, Map<String, Object> model) {
 
         Set sentinels = new HashSet();
@@ -43,9 +41,10 @@ public class IndexController {
         sentinelPool.returnResource(master);
         System.out.println(master.get("username"));
 
-        BigDecimal a = new BigDecimal(1);
+       /* BigDecimal a = new BigDecimal(1);
         BigDecimal b = BigDecimal.ZERO;
-        System.out.println(a.divide(b).doubleValue());
+        System.out.println(a.divide(b).doubleValue());*/
+
         return "index";
     }
 

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apm-jedis-2.x-plugin-3.2.6-2017">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tomcat/src/main/webapp/WEB-INF/lib/plugins/apm-jedis-2.x-plugin-3.2.6-2017.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

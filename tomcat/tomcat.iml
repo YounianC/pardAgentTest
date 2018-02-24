@@ -26,6 +26,20 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="pard-agent" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/Develop/apache-tomcat-7.0.78_2/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/Develop/apache-tomcat-7.0.78_2/lib" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="skywalking-agent" level="project" />
+    <orderEntry type="library" name="apm-jedis-2.x-plugin-3.2.6-2017" level="project" />
+    <orderEntry type="library" name="Maven: com.lagou.pard:pard-agent-boot:0.0.1" level="project" />
+    <orderEntry type="library" name="Maven: agentTest:byteBuddyTest:1.0" level="project" />
     <orderEntry type="module" module-name="dubboProvider" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.35" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:dubbo:2.5.3" level="project" />
